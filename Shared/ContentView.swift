@@ -10,8 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            NavigationLink(destination: LendListView()){
-                Text("a")
+            VStack{
+                NavigationLink(destination: LendListView()){
+                    Text("transaction")
+                }
+                NavigationLink(destination: UserListView()){
+                    Text("user")
+                }
             }
         }
     }

@@ -26,3 +26,11 @@ struct Transaction : Decodable,Identifiable{
         case isAccepted
     }
 }
+struct User : Decodable,Identifiable{
+    var id: Int
+    var userName : String
+    private enum CodingKeys: String, CodingKey {
+        case id = "userId"
+        case userName
+    }
+}
