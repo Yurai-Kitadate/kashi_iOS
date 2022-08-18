@@ -17,6 +17,12 @@
 		5235877228ADE65B004E11B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235874828ADE658004E11B9 /* ContentView.swift */; };
 		5235877328ADE65B004E11B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5235874928ADE65B004E11B9 /* Assets.xcassets */; };
 		5235877428ADE65B004E11B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5235874928ADE65B004E11B9 /* Assets.xcassets */; };
+		5235878528ADEF17004E11B9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878428ADEF17004E11B9 /* Color.swift */; };
+		5235878828ADF1C3004E11B9 /* AcceptLendButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */; };
+		5235878A28ADF464004E11B9 /* RejectLendButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878928ADF464004E11B9 /* RejectLendButtonView.swift */; };
+		5235878D28ADF6C0004E11B9 /* UndoTransactionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */; };
+		5235879028ADFEEE004E11B9 /* LendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878F28ADFEEE004E11B9 /* LendListView.swift */; };
+		5235879328ADFF5C004E11B9 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879228ADFF5C004E11B9 /* model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5235876728ADE65B004E11B9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5235876B28ADE65B004E11B9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5235876D28ADE65B004E11B9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		5235878428ADEF17004E11B9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptLendButtonView.swift; sourceTree = "<group>"; };
+		5235878928ADF464004E11B9 /* RejectLendButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectLendButtonView.swift; sourceTree = "<group>"; };
+		5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoTransactionButtonView.swift; sourceTree = "<group>"; };
+		5235878F28ADFEEE004E11B9 /* LendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendListView.swift; sourceTree = "<group>"; };
+		5235879228ADFF5C004E11B9 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +109,11 @@
 		5235874628ADE658004E11B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5235879128ADFF4A004E11B9 /* Model */,
+				5235878E28ADFEDE004E11B9 /* List */,
+				5235878628ADF171004E11B9 /* Button */,
 				5235874728ADE658004E11B9 /* kashi_kashiApp.swift */,
+				5235878328ADEEFA004E11B9 /* Color */,
 				5235874828ADE658004E11B9 /* ContentView.swift */,
 				5235874928ADE65B004E11B9 /* Assets.xcassets */,
 			);
@@ -139,6 +155,40 @@
 				5235876D28ADE65B004E11B9 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5235878328ADEEFA004E11B9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				5235878428ADEF17004E11B9 /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		5235878628ADF171004E11B9 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */,
+				5235878928ADF464004E11B9 /* RejectLendButtonView.swift */,
+				5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		5235878E28ADFEDE004E11B9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5235878F28ADFEEE004E11B9 /* LendListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		5235879128ADFF4A004E11B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5235879228ADFF5C004E11B9 /* model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +350,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5235877128ADE65B004E11B9 /* ContentView.swift in Sources */,
+				5235878D28ADF6C0004E11B9 /* UndoTransactionButtonView.swift in Sources */,
+				5235878A28ADF464004E11B9 /* RejectLendButtonView.swift in Sources */,
+				5235878828ADF1C3004E11B9 /* AcceptLendButtonView.swift in Sources */,
 				5235876F28ADE65B004E11B9 /* kashi_kashiApp.swift in Sources */,
+				5235879028ADFEEE004E11B9 /* LendListView.swift in Sources */,
+				5235878528ADEF17004E11B9 /* Color.swift in Sources */,
+				5235879328ADFF5C004E11B9 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
