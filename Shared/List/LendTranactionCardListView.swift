@@ -8,29 +8,29 @@
 import Foundation
 import SwiftUI
 @MainActor
-class TransactionsStore: ObservableObject {
+class LendTransactionsStore: ObservableObject {
     @Published private(set) var transactions = [Transaction]()
     func loadTransactions() async {
-        let url = URL(string: "http://localhost:8000/get/transactions")!
+        let url = URL(string: "http://localhost:8000/get/transactions/lend/" + String(LoginUser().userId))!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
         let (data, _) = try! await URLSession.shared.data(for: urlRequest)
         let d = JSONDecoder()
         d.keyDecodingStrategy = .convertFromSnakeCase
-        print(1)
         transactions = try! d.decode([Transaction].self, from: data)
     }
 }
 
-struct LendListView : View{
-    @StateObject var transactionsStore: TransactionsStore
+struct LendTransactionCardListView : View{
+    @StateObject var lendTransactionsStore:  LendTransactionsStore
     
     init() {
-        _transactionsStore = StateObject(wrappedValue: TransactionsStore())
+        _lendTransactionsStore = StateObject(wrappedValue:  LendTransactionsStore())
     }
     var body : some View{
         ScrollView{
-            if transactionsStore.transactions.isEmpty {
+            Text("")
+            if lendTransactionsStore.transactions.isEmpty {
                 ZStack(alignment: .center){
                     VStack{
                         ProgressView("now loding")
@@ -38,12 +38,13 @@ struct LendListView : View{
                     }
                 }
             } else {
-                ForEach((0..<transactionsStore.transactions.count), id: \.self) { i in
-                    Text(transactionsStore.transactions[i]._description)
+                ForEach((0..<lendTransactionsStore.transactions.count), id: \.self) { i in
+                    TransactionCardView(trans: lendTransactionsStore.transactions[i])
                 }
             }
         }.task {
-            await transactionsStore.loadTransactions()
+            await lendTransactionsStore.loadTransactions()
         }
     }
 }
+

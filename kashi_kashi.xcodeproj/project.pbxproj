@@ -21,9 +21,14 @@
 		5235878828ADF1C3004E11B9 /* AcceptLendButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */; };
 		5235878A28ADF464004E11B9 /* RejectLendButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878928ADF464004E11B9 /* RejectLendButtonView.swift */; };
 		5235878D28ADF6C0004E11B9 /* UndoTransactionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */; };
-		5235879028ADFEEE004E11B9 /* LendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878F28ADFEEE004E11B9 /* LendListView.swift */; };
+		5235879028ADFEEE004E11B9 /* BothTransactionCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878F28ADFEEE004E11B9 /* BothTransactionCardListView.swift */; };
 		5235879328ADFF5C004E11B9 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879228ADFF5C004E11B9 /* model.swift */; };
 		5235879528AE1800004E11B9 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879428AE1800004E11B9 /* UserListView.swift */; };
+		5235879728AE50A9004E11B9 /* LendTranactionCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879628AE50A9004E11B9 /* LendTranactionCardListView.swift */; };
+		5235879A28AE5140004E11B9 /* BorrowTransactionCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879928AE5140004E11B9 /* BorrowTransactionCardListView.swift */; };
+		5235879C28AE5195004E11B9 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879B28AE5195004E11B9 /* TransactionCardView.swift */; };
+		5235879F28AF6CED004E11B9 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879E28AF6CED004E11B9 /* user.swift */; };
+		523587A128AFB7CB004E11B9 /* DoneTransactionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +65,14 @@
 		5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptLendButtonView.swift; sourceTree = "<group>"; };
 		5235878928ADF464004E11B9 /* RejectLendButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectLendButtonView.swift; sourceTree = "<group>"; };
 		5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoTransactionButtonView.swift; sourceTree = "<group>"; };
-		5235878F28ADFEEE004E11B9 /* LendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendListView.swift; sourceTree = "<group>"; };
+		5235878F28ADFEEE004E11B9 /* BothTransactionCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothTransactionCardListView.swift; sourceTree = "<group>"; };
 		5235879228ADFF5C004E11B9 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		5235879428AE1800004E11B9 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		5235879628AE50A9004E11B9 /* LendTranactionCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendTranactionCardListView.swift; sourceTree = "<group>"; };
+		5235879928AE5140004E11B9 /* BorrowTransactionCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowTransactionCardListView.swift; sourceTree = "<group>"; };
+		5235879B28AE5195004E11B9 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		5235879E28AF6CED004E11B9 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTransactionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,8 @@
 		5235874628ADE658004E11B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				5235879D28AF6CDF004E11B9 /* Login */,
+				5235879828AE511E004E11B9 /* Card */,
 				5235879128ADFF4A004E11B9 /* Model */,
 				5235878E28ADFEDE004E11B9 /* List */,
 				5235878628ADF171004E11B9 /* Button */,
@@ -173,6 +185,7 @@
 				5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */,
 				5235878928ADF464004E11B9 /* RejectLendButtonView.swift */,
 				5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */,
+				523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -180,7 +193,9 @@
 		5235878E28ADFEDE004E11B9 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				5235878F28ADFEEE004E11B9 /* LendListView.swift */,
+				5235878F28ADFEEE004E11B9 /* BothTransactionCardListView.swift */,
+				5235879928AE5140004E11B9 /* BorrowTransactionCardListView.swift */,
+				5235879628AE50A9004E11B9 /* LendTranactionCardListView.swift */,
 				5235879428AE1800004E11B9 /* UserListView.swift */,
 			);
 			path = List;
@@ -192,6 +207,22 @@
 				5235879228ADFF5C004E11B9 /* model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5235879828AE511E004E11B9 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				5235879B28AE5195004E11B9 /* TransactionCardView.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		5235879D28AF6CDF004E11B9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5235879E28AF6CED004E11B9 /* user.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,13 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5235879F28AF6CED004E11B9 /* user.swift in Sources */,
 				5235877128ADE65B004E11B9 /* ContentView.swift in Sources */,
 				5235879528AE1800004E11B9 /* UserListView.swift in Sources */,
+				523587A128AFB7CB004E11B9 /* DoneTransactionButtonView.swift in Sources */,
 				5235878D28ADF6C0004E11B9 /* UndoTransactionButtonView.swift in Sources */,
+				5235879A28AE5140004E11B9 /* BorrowTransactionCardListView.swift in Sources */,
 				5235878A28ADF464004E11B9 /* RejectLendButtonView.swift in Sources */,
+				5235879728AE50A9004E11B9 /* LendTranactionCardListView.swift in Sources */,
 				5235878828ADF1C3004E11B9 /* AcceptLendButtonView.swift in Sources */,
 				5235876F28ADE65B004E11B9 /* kashi_kashiApp.swift in Sources */,
-				5235879028ADFEEE004E11B9 /* LendListView.swift in Sources */,
+				5235879C28AE5195004E11B9 /* TransactionCardView.swift in Sources */,
+				5235879028ADFEEE004E11B9 /* BothTransactionCardListView.swift in Sources */,
 				5235878528ADEF17004E11B9 /* Color.swift in Sources */,
 				5235879328ADFF5C004E11B9 /* model.swift in Sources */,
 			);

@@ -10,7 +10,6 @@ class UsersStore: ObservableObject {
         let (data, _) = try! await URLSession.shared.data(for: urlRequest)
         let d = JSONDecoder()
         d.keyDecodingStrategy = .convertFromSnakeCase
-        print(1)
         users = try! d.decode([User].self, from: data)
     }
 }
