@@ -6,7 +6,7 @@
 //
 import SwiftUI
 import Foundation
-struct MainView : View{
+struct ValidTransactionsView : View{
     @State private var showingSheet = false
     @State private var selectionViewIndex = 0
     let views = [
@@ -23,7 +23,6 @@ struct MainView : View{
             }
             .pickerStyle(.segmented)
             Spacer()
-            AppliedTransactionCardView(transaction: Transaction(id: 100, borrowerId: 1, lenderId: 1, yen: 10000, _description: "aaaaa", isDone: 0, isAccepted: 0))
             switch self.selectionViewIndex {
             case 0:
                 BorrowTransactionCardListView()
@@ -32,17 +31,6 @@ struct MainView : View{
             default:
                 BothTransactionCardListView()
             }
-            Spacer()
-            Image(systemName: "plus.circle")
-                .onTapGesture {
-                    showingSheet.toggle()
-                }
-                .sheet(isPresented: $showingSheet){
-                    CreateTransactionSheetView()
-                }
-                .foregroundColor(.myPrimary)
-                .padding(7)
-                .cornerRadius(5)
         }
     }
 }
