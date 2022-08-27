@@ -7,19 +7,20 @@ class BorrowTransactionsStore: ObservableObject {
         let url = URL(string: "http://localhost:8000/get/transactions/borrow/" + String(LoginUser().userId))!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
-        let (data, _) = try! await URLSession.shared.data(for: urlRequest)
-        let d = JSONDecoder()
-        d.keyDecodingStrategy = .convertFromSnakeCase
-        transactions = try! d.decode([Transaction].self, from: data)
+        do{
+            let (data, _) = try await URLSession.shared.data(for: urlRequest)
+            let d = JSONDecoder()
+            d.keyDecodingStrategy = .convertFromSnakeCase
+            transactions = try d.decode([Transaction].self, from: data)
+        }catch{
+            print(error.localizedDescription)
+            return
+        }
     }
 }
 
 struct BorrowTransactionCardListView : View{
-    @StateObject var borrowTransactionsStore:  BorrowTransactionsStore
-    
-    init() {
-        _borrowTransactionsStore = StateObject(wrappedValue:  BorrowTransactionsStore())
-    }
+    @StateObject private var borrowTransactionsStore = BorrowTransactionsStore()
     var body : some View{
         ScrollView{
             Text("")
@@ -32,7 +33,7 @@ struct BorrowTransactionCardListView : View{
                 }
             } else {
                 ForEach((0..<borrowTransactionsStore.transactions.count), id: \.self) { i in
-                    TransactionCardView(trans: borrowTransactionsStore.transactions[i])
+                    TransactionCardView(transaction: borrowTransactionsStore.transactions[i])
                 }
             }
         }.task {

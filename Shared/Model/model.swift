@@ -34,3 +34,25 @@ struct User : Decodable,Identifiable{
         case userName
     }
 }
+
+struct InsertedTransaction: Encodable{
+    var borrowerId :Int
+    var lenderId : Int
+    var yen       :Int
+    var _description : String
+    var isDone     : Int
+    var isAccepted : Int
+    private enum CodingKeys: String, CodingKey {
+        case borrowerId
+        case lenderId
+        case yen
+        case _description = "description"
+        case isDone
+        case isAccepted
+    }
+}
+enum cardType{
+    case lend
+    case borrow
+    case none
+}

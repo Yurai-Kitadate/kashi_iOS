@@ -15,22 +15,26 @@ class OtherSideStore: ObservableObject {
         let url = URL(string: "http://localhost:8000/get/user/" + String(otherSideId))!
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
-        let (data, _) = try! await URLSession.shared.data(for: urlRequest)
-        let d = JSONDecoder()
-        d.keyDecodingStrategy = .convertFromSnakeCase
-        otherside = try! d.decode([User].self, from: data)
+        
+        do{
+            let (data, _) = try await URLSession.shared.data(for: urlRequest)
+            let d = JSONDecoder()
+            d.keyDecodingStrategy = .convertFromSnakeCase
+            otherside = try d.decode([User].self, from: data)
+        }catch{
+            print(error.localizedDescription)
+            return
+        }
+        
+        
     }
 }
 
 struct TransactionCardView : View{
     var transaction :Transaction
     let screen: CGRect = UIScreen.main.bounds
-    @StateObject var otherSideStore : OtherSideStore
-    
-    init(trans : Transaction) {
-        _otherSideStore = StateObject(wrappedValue:  OtherSideStore())
-        transaction = trans
-    }
+    @State var card : cardType = .none
+    @StateObject var otherSideStore = OtherSideStore()
     var body : some View{
         ZStack{
             Rectangle()
@@ -56,7 +60,7 @@ struct TransactionCardView : View{
                         if otherSideStore.otherside.isEmpty{
                             Text("loading...")
                                 .font(.custom("Times-Roman", size: 20))
-
+                            
                         }else{
                             Text(String(otherSideStore.otherside[0].userName))
                                 .font(.custom("Times-Roman", size: 20))
@@ -67,14 +71,20 @@ struct TransactionCardView : View{
                     }
                     HStack{
                         Spacer()
-                        DoneTransactionButtonView()
-                            //.padding(5)
+                        if card == .lend{
+                            AcceptLendButtonView()
+                        }
+                        if card == .borrow{
+                            DoneTransactionButtonView(transactionId: transaction.id)
+                        }
                     }
                 }.padding(15)
                     .task {
                         if LoginUser().userId == transaction.borrowerId{
+                            card = .borrow
                             await otherSideStore.loadOtherSide(otherSideId: transaction.lenderId)
                         }else{
+                            card = .lend
                             await otherSideStore.loadOtherSide(otherSideId: transaction.borrowerId)
                         }
                     }

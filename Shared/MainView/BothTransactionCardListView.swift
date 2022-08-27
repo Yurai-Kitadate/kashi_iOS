@@ -11,22 +11,23 @@ import SwiftUI
 class BothTransactionsStore: ObservableObject {
     @Published private(set) var transactions = [Transaction]()
     func loadTransactions() async {
-        let url1 = URL(string: "http://localhost:8000/get/transactions/both/" + String(LoginUser().userId))!
-        var urlRequest1 = URLRequest(url: url1)
-        urlRequest1.httpMethod = "GET"
-        let (data1, _) = try! await URLSession.shared.data(for: urlRequest1)
-        let d = JSONDecoder()
-        d.keyDecodingStrategy = .convertFromSnakeCase
-        transactions = try! d.decode([Transaction].self, from: data1)
+        let url = URL(string: "http://localhost:8000/get/transactions/both/" + String(LoginUser().userId))!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        do{
+            let (data, _) = try await URLSession.shared.data(for: urlRequest)
+            let d = JSONDecoder()
+            d.keyDecodingStrategy = .convertFromSnakeCase
+            transactions = try d.decode([Transaction].self, from: data)
+        }catch{
+            print(error.localizedDescription)
+            return
+        }
     }
 }
 
 struct BothTransactionCardListView : View{
-    @StateObject var bothTransactionsStore:  BothTransactionsStore
-    
-    init() {
-        _bothTransactionsStore = StateObject(wrappedValue:  BothTransactionsStore())
-    }
+    @StateObject private var bothTransactionsStore = BothTransactionsStore()
     var body : some View{
         ScrollView{
             Text("")
@@ -39,7 +40,7 @@ struct BothTransactionCardListView : View{
                 }
             } else {
                 ForEach((0..<bothTransactionsStore.transactions.count), id: \.self) { i in
-                    TransactionCardView(trans: bothTransactionsStore.transactions[i])
+                    TransactionCardView(transaction: bothTransactionsStore.transactions[i])
                 }
             }
         }.task {

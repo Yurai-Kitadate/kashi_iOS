@@ -15,11 +15,7 @@ class UsersStore: ObservableObject {
 }
 
 struct UserListView : View{
-    @StateObject var usersStore: UsersStore
-    
-    init() {
-        _usersStore = StateObject(wrappedValue: UsersStore())
-    }
+    @StateObject var usersStore = UsersStore()
     var body : some View{
         ScrollView{
             if usersStore.users.isEmpty {
