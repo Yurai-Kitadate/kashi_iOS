@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+kashi_kashi (iOS) in kashi_kashi, no dependencies

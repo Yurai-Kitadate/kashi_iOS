@@ -1,0 +1,16 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/ValidTransactions/LendTransactionsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "now loding"
+      }
+    ]
+  },
+  "version": 1
+}

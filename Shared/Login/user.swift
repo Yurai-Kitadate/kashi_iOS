@@ -9,6 +9,7 @@ import Foundation
 public class LoginUser {
     let userId = 1
     let userName = "yuurai"
+    let mailAddress = "yuurai18@gmail.com"
 }
 
 

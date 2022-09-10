@@ -1,0 +1,20 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/ValidTransactions/TransactionCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "2022/12/25"
+      },
+      {
+        "comment": "",
+        "key": "loading..."
+      }
+    ]
+  },
+  "version": 1
+}

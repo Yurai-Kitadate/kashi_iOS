@@ -26,7 +26,7 @@ class BothTransactionsStore: ObservableObject {
     }
 }
 
-struct BothTransactionCardListView : View{
+struct BothTransactionsView : View{
     @StateObject private var bothTransactionsStore = BothTransactionsStore()
     var body : some View{
         ScrollView{

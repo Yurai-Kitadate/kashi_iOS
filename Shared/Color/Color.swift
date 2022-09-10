@@ -12,6 +12,8 @@ extension Color {
     static let myRed : Color = Color(red: 255/255, green: 64/255, blue: 64/255)
     static let myGray : Color = Color(red: 128/255, green: 128/255, blue: 128/255)
     static let myLightGray : Color = Color(red: 246/255, green: 246/255, blue: 246/255)
+    static let myGreen : Color = Color(red: 0/255, green: 207/255, blue: 96/255)
+    static let myLightPrimary : Color = Color(red: 49/255, green: 192/255, blue: 223/255)
 
 }
 

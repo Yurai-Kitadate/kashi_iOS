@@ -2,35 +2,38 @@ import Foundation
 import SwiftUI
 
 struct DoneTransactionButtonView: View{
-    var transactionId : Int
+    var transaction : Transaction
     @State var text = "借りを返した"
+    @State var selected = false
     var body : some View {
-        
-        Text(text)
-            .onTapGesture {
-                text = "done"
-                doneTransaction(transactionId: transactionId)
-            }
-            .foregroundColor(.myPrimary)
-            .padding(7)
-            .cornerRadius(5)
-            .overlay(
-                RoundedRectangle(cornerRadius: 5)
-                    .stroke(Color.myPrimary, lineWidth: 1)
-            )
+        if selected{
+            Text(text)
+                .onTapGesture {
+                    text = "処理済み"
+                    doneTransaction(transaction: transaction)
+                    selected = true
+                }
+                .foregroundColor(.myPrimary)
+                .padding(7)
+                .cornerRadius(5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(Color.myPrimary, lineWidth: 1)
+                )
+        }else{
+            Text(text)
+                .onTapGesture {
+                    text = "done"
+                    doneTransaction(transaction: transaction)
+                    selected = true
+                }
+                .foregroundColor(.myRed)
+                .padding(7)
+                .cornerRadius(5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(Color.myRed, lineWidth: 1)
+                )
+        }
     }
 }
-func doneTransaction(transactionId:Int){
-    Task {
-        let url = URL(string: "http://localhost:8000/delete/transaction/" + String(transactionId))!
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "DELETE"
-        let (data, _) = try! await URLSession.shared.data(for: urlRequest)
-    }
-}
-struct DoneTransactionButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        DoneTransactionButtonView(transactionId: 1)
-    }
-}
-

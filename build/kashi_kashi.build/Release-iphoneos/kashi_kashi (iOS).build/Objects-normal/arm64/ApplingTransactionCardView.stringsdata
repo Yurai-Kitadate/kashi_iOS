@@ -1,0 +1,28 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/ValidTransactions/ApplingTransactionCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "2022/12/25"
+      },
+      {
+        "comment": "",
+        "key": "loading..."
+      },
+      {
+        "comment": "",
+        "key": "借り"
+      },
+      {
+        "comment": "",
+        "key": "貸し"
+      }
+    ]
+  },
+  "version": 1
+}

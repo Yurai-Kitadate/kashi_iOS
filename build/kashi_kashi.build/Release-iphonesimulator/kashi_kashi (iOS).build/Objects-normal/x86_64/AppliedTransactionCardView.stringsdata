@@ -1,0 +1,28 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/AppliedTransactions/AppliedTransactionCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "処理済み"
+      },
+      {
+        "comment": "",
+        "key": "2022/12/25"
+      },
+      {
+        "comment": "",
+        "key": " 承認 "
+      },
+      {
+        "comment": "",
+        "key": " 拒絶 "
+      },
+      {
+        "comment": "",
+        "key": ""
+      }
+    ]
+  },
+  "version": 1
+}

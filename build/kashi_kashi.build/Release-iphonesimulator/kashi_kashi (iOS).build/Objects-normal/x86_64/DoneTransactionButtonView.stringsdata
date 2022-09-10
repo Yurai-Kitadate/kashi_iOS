@@ -1,0 +1,12 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/ValidTransactions/DoneTransactionButtonView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "処理済み"
+      }
+    ]
+  },
+  "version": 1
+}

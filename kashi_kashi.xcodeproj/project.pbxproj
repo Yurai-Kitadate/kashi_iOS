@@ -21,15 +21,27 @@
 		5235878828ADF1C3004E11B9 /* AcceptLendButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */; };
 		5235878A28ADF464004E11B9 /* RejectLendButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878928ADF464004E11B9 /* RejectLendButtonView.swift */; };
 		5235878D28ADF6C0004E11B9 /* UndoTransactionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */; };
-		5235879028ADFEEE004E11B9 /* BothTransactionCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878F28ADFEEE004E11B9 /* BothTransactionCardListView.swift */; };
+		5235879028ADFEEE004E11B9 /* BothTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235878F28ADFEEE004E11B9 /* BothTransactionsView.swift */; };
 		5235879328ADFF5C004E11B9 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879228ADFF5C004E11B9 /* model.swift */; };
-		5235879728AE50A9004E11B9 /* LendTransactionCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879628AE50A9004E11B9 /* LendTransactionCardListView.swift */; };
-		5235879A28AE5140004E11B9 /* BorrowTransactionCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879928AE5140004E11B9 /* BorrowTransactionCardListView.swift */; };
+		5235879728AE50A9004E11B9 /* LendTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879628AE50A9004E11B9 /* LendTransactionsView.swift */; };
+		5235879A28AE5140004E11B9 /* BorrowTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879928AE5140004E11B9 /* BorrowTransactionsView.swift */; };
 		5235879C28AE5195004E11B9 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879B28AE5195004E11B9 /* TransactionCardView.swift */; };
 		5235879F28AF6CED004E11B9 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5235879E28AF6CED004E11B9 /* user.swift */; };
 		523587A128AFB7CB004E11B9 /* DoneTransactionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */; };
+		5254E0A928B9FCE80024F5D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0A828B9FCE80024F5D3 /* MainView.swift */; };
+		5254E0AD28B9FE450024F5D3 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0AC28B9FE450024F5D3 /* FriendsView.swift */; };
+		5254E0AF28B9FE720024F5D3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0AE28B9FE720024F5D3 /* SettingsView.swift */; };
+		5254E0B128BA00810024F5D3 /* AppliedTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0B028BA00810024F5D3 /* AppliedTransactionsView.swift */; };
+		5254E0B528BB9F830024F5D3 /* ApplingTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0B428BB9F830024F5D3 /* ApplingTransactionsView.swift */; };
+		5254E0B928C122F30024F5D3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0B828C122F30024F5D3 /* TestView.swift */; };
+		5254E0BA28C122F30024F5D3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254E0B828C122F30024F5D3 /* TestView.swift */; };
 		526902F628B7BEFF007CE02F /* AppliedTransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0DCD828B4B2E3001ADB80 /* AppliedTransactionCardView.swift */; };
-		526902FA28B7D62D007CE02F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526902F928B7D62D007CE02F /* MainView.swift */; };
+		526902FA28B7D62D007CE02F /* ValidTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526902F928B7D62D007CE02F /* ValidTransactionsView.swift */; };
+		5282362628C5DFA7007ACD0A /* func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282362528C5DFA7007ACD0A /* func.swift */; };
+		5282362828C9D099007ACD0A /* BorrowMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282362728C9D099007ACD0A /* BorrowMarkView.swift */; };
+		5282362A28C9D11F007ACD0A /* LendMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282362928C9D11F007ACD0A /* LendMarkView.swift */; };
+		5282362C28C9D5D5007ACD0A /* CompleteMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282362B28C9D5D5007ACD0A /* CompleteMarkView.swift */; };
+		5282363028CC723E007ACD0A /* TransactionDetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282362F28CC723D007ACD0A /* TransactionDetailCardView.swift */; };
 		52E0DCD928B4B2E3001ADB80 /* AppliedTransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0DCD828B4B2E3001ADB80 /* AppliedTransactionCardView.swift */; };
 		52F8827928B3E174003D9250 /* CreateTransactionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8827828B3E174003D9250 /* CreateTransactionSheetView.swift */; };
 /* End PBXBuildFile section */
@@ -68,14 +80,25 @@
 		5235878728ADF1C3004E11B9 /* AcceptLendButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptLendButtonView.swift; sourceTree = "<group>"; };
 		5235878928ADF464004E11B9 /* RejectLendButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectLendButtonView.swift; sourceTree = "<group>"; };
 		5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoTransactionButtonView.swift; sourceTree = "<group>"; };
-		5235878F28ADFEEE004E11B9 /* BothTransactionCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothTransactionCardListView.swift; sourceTree = "<group>"; };
+		5235878F28ADFEEE004E11B9 /* BothTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothTransactionsView.swift; sourceTree = "<group>"; };
 		5235879228ADFF5C004E11B9 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
-		5235879628AE50A9004E11B9 /* LendTransactionCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendTransactionCardListView.swift; sourceTree = "<group>"; };
-		5235879928AE5140004E11B9 /* BorrowTransactionCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowTransactionCardListView.swift; sourceTree = "<group>"; };
+		5235879628AE50A9004E11B9 /* LendTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendTransactionsView.swift; sourceTree = "<group>"; };
+		5235879928AE5140004E11B9 /* BorrowTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowTransactionsView.swift; sourceTree = "<group>"; };
 		5235879B28AE5195004E11B9 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		5235879E28AF6CED004E11B9 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTransactionButtonView.swift; sourceTree = "<group>"; };
-		526902F928B7D62D007CE02F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5254E0A828B9FCE80024F5D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5254E0AC28B9FE450024F5D3 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		5254E0AE28B9FE720024F5D3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5254E0B028BA00810024F5D3 /* AppliedTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTransactionsView.swift; sourceTree = "<group>"; };
+		5254E0B428BB9F830024F5D3 /* ApplingTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplingTransactionsView.swift; sourceTree = "<group>"; };
+		5254E0B828C122F30024F5D3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		526902F928B7D62D007CE02F /* ValidTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidTransactionsView.swift; sourceTree = "<group>"; };
+		5282362528C5DFA7007ACD0A /* func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
+		5282362728C9D099007ACD0A /* BorrowMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowMarkView.swift; sourceTree = "<group>"; };
+		5282362928C9D11F007ACD0A /* LendMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendMarkView.swift; sourceTree = "<group>"; };
+		5282362B28C9D5D5007ACD0A /* CompleteMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteMarkView.swift; sourceTree = "<group>"; };
+		5282362F28CC723D007ACD0A /* TransactionDetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailCardView.swift; sourceTree = "<group>"; };
 		52E0DCD728B4A571001ADB80 /* kashi-kashi--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "kashi-kashi--iOS--Info.plist"; sourceTree = "<group>"; };
 		52E0DCD828B4B2E3001ADB80 /* AppliedTransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedTransactionCardView.swift; sourceTree = "<group>"; };
 		52F8827828B3E174003D9250 /* CreateTransactionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionSheetView.swift; sourceTree = "<group>"; };
@@ -128,14 +151,15 @@
 		5235874628ADE658004E11B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				526902F828B7D2B7007CE02F /* MainView */,
+				5282362428C5DF92007ACD0A /* Func */,
+				5254E0A228B9F9ED0024F5D3 /* View */,
 				5235879D28AF6CDF004E11B9 /* Login */,
 				5235879128ADFF4A004E11B9 /* Model */,
-				5235878E28ADFEDE004E11B9 /* List */,
 				5235878628ADF171004E11B9 /* Button */,
 				5235874728ADE658004E11B9 /* kashi_kashiApp.swift */,
 				5235878328ADEEFA004E11B9 /* Color */,
 				5235874828ADE658004E11B9 /* ContentView.swift */,
+				5254E0B828C122F30024F5D3 /* TestView.swift */,
 				5235874928ADE65B004E11B9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -195,13 +219,6 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-		5235878E28ADFEDE004E11B9 /* List */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
 		5235879128ADFF4A004E11B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,44 +235,85 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		526902F328B7BE11007CE02F /* BorrowList */ = {
+		5254E0A228B9F9ED0024F5D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5235879928AE5140004E11B9 /* BorrowTransactionCardListView.swift */,
-				523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */,
+				526902F828B7D2B7007CE02F /* Main */,
 			);
-			path = BorrowList;
+			path = View;
 			sourceTree = "<group>";
 		};
-		526902F428B7BE4C007CE02F /* LendList */ = {
+		5254E0A528B9FC2A0024F5D3 /* ValidTransactions */ = {
 			isa = PBXGroup;
 			children = (
-				5235879628AE50A9004E11B9 /* LendTransactionCardListView.swift */,
+				5235878F28ADFEEE004E11B9 /* BothTransactionsView.swift */,
+				526902F928B7D62D007CE02F /* ValidTransactionsView.swift */,
+				5235879B28AE5195004E11B9 /* TransactionCardView.swift */,
+				5235879628AE50A9004E11B9 /* LendTransactionsView.swift */,
 				5235878C28ADF6C0004E11B9 /* UndoTransactionButtonView.swift */,
+				5235879928AE5140004E11B9 /* BorrowTransactionsView.swift */,
+				523587A028AFB7CB004E11B9 /* DoneTransactionButtonView.swift */,
+				5282362928C9D11F007ACD0A /* LendMarkView.swift */,
+				5254E0B428BB9F830024F5D3 /* ApplingTransactionsView.swift */,
+				5282362728C9D099007ACD0A /* BorrowMarkView.swift */,
+				5282362B28C9D5D5007ACD0A /* CompleteMarkView.swift */,
+				5282362F28CC723D007ACD0A /* TransactionDetailCardView.swift */,
 			);
-			path = LendList;
+			path = ValidTransactions;
 			sourceTree = "<group>";
 		};
-		526902F528B7BEDC007CE02F /* AppliedList */ = {
+		5254E0A628B9FCA30024F5D3 /* AppliedTransactions */ = {
 			isa = PBXGroup;
 			children = (
 				52E0DCD828B4B2E3001ADB80 /* AppliedTransactionCardView.swift */,
+				5254E0B028BA00810024F5D3 /* AppliedTransactionsView.swift */,
 			);
-			path = AppliedList;
+			path = AppliedTransactions;
 			sourceTree = "<group>";
 		};
-		526902F828B7D2B7007CE02F /* MainView */ = {
+		5254E0A728B9FCCE0024F5D3 /* CreateTransaction */ = {
 			isa = PBXGroup;
 			children = (
-				526902F928B7D62D007CE02F /* MainView.swift */,
-				5235879B28AE5195004E11B9 /* TransactionCardView.swift */,
 				52F8827828B3E174003D9250 /* CreateTransactionSheetView.swift */,
-				5235878F28ADFEEE004E11B9 /* BothTransactionCardListView.swift */,
-				526902F528B7BEDC007CE02F /* AppliedList */,
-				526902F428B7BE4C007CE02F /* LendList */,
-				526902F328B7BE11007CE02F /* BorrowList */,
 			);
-			path = MainView;
+			path = CreateTransaction;
+			sourceTree = "<group>";
+		};
+		5254E0AA28B9FDC50024F5D3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5254E0AE28B9FE720024F5D3 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5254E0AB28B9FDDF0024F5D3 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				5254E0AC28B9FE450024F5D3 /* FriendsView.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		526902F828B7D2B7007CE02F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5254E0A828B9FCE80024F5D3 /* MainView.swift */,
+				5254E0AB28B9FDDF0024F5D3 /* Friends */,
+				5254E0AA28B9FDC50024F5D3 /* Settings */,
+				5254E0A728B9FCCE0024F5D3 /* CreateTransaction */,
+				5254E0A628B9FCA30024F5D3 /* AppliedTransactions */,
+				5254E0A528B9FC2A0024F5D3 /* ValidTransactions */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5282362428C5DF92007ACD0A /* Func */ = {
+			isa = PBXGroup;
+			children = (
+				5282362528C5DFA7007ACD0A /* func.swift */,
+			);
+			path = Func;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,18 +478,29 @@
 				5235877128ADE65B004E11B9 /* ContentView.swift in Sources */,
 				523587A128AFB7CB004E11B9 /* DoneTransactionButtonView.swift in Sources */,
 				5235878D28ADF6C0004E11B9 /* UndoTransactionButtonView.swift in Sources */,
-				5235879A28AE5140004E11B9 /* BorrowTransactionCardListView.swift in Sources */,
+				5235879A28AE5140004E11B9 /* BorrowTransactionsView.swift in Sources */,
 				52F8827928B3E174003D9250 /* CreateTransactionSheetView.swift in Sources */,
 				5235878A28ADF464004E11B9 /* RejectLendButtonView.swift in Sources */,
-				5235879728AE50A9004E11B9 /* LendTransactionCardListView.swift in Sources */,
+				5235879728AE50A9004E11B9 /* LendTransactionsView.swift in Sources */,
+				5282362A28C9D11F007ACD0A /* LendMarkView.swift in Sources */,
+				5282362828C9D099007ACD0A /* BorrowMarkView.swift in Sources */,
 				5235878828ADF1C3004E11B9 /* AcceptLendButtonView.swift in Sources */,
+				5282362628C5DFA7007ACD0A /* func.swift in Sources */,
 				5235876F28ADE65B004E11B9 /* kashi_kashiApp.swift in Sources */,
-				526902FA28B7D62D007CE02F /* MainView.swift in Sources */,
+				526902FA28B7D62D007CE02F /* ValidTransactionsView.swift in Sources */,
+				5254E0B928C122F30024F5D3 /* TestView.swift in Sources */,
+				5254E0A928B9FCE80024F5D3 /* MainView.swift in Sources */,
+				5282362C28C9D5D5007ACD0A /* CompleteMarkView.swift in Sources */,
+				5254E0AD28B9FE450024F5D3 /* FriendsView.swift in Sources */,
 				52E0DCD928B4B2E3001ADB80 /* AppliedTransactionCardView.swift in Sources */,
+				5254E0B528BB9F830024F5D3 /* ApplingTransactionsView.swift in Sources */,
+				5282363028CC723E007ACD0A /* TransactionDetailCardView.swift in Sources */,
 				5235879C28AE5195004E11B9 /* TransactionCardView.swift in Sources */,
-				5235879028ADFEEE004E11B9 /* BothTransactionCardListView.swift in Sources */,
+				5235879028ADFEEE004E11B9 /* BothTransactionsView.swift in Sources */,
 				5235878528ADEF17004E11B9 /* Color.swift in Sources */,
 				5235879328ADFF5C004E11B9 /* model.swift in Sources */,
+				5254E0AF28B9FE720024F5D3 /* SettingsView.swift in Sources */,
+				5254E0B128BA00810024F5D3 /* AppliedTransactionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5254E0BA28C122F30024F5D3 /* TestView.swift in Sources */,
 				5235877228ADE65B004E11B9 /* ContentView.swift in Sources */,
 				526902F628B7BEFF007CE02F /* AppliedTransactionCardView.swift in Sources */,
 				5235877028ADE65B004E11B9 /* kashi_kashiApp.swift in Sources */,

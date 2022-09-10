@@ -19,10 +19,10 @@ class BorrowTransactionsStore: ObservableObject {
     }
 }
 
-struct BorrowTransactionCardListView : View{
+struct BorrowTransactionsView : View{
     @StateObject private var borrowTransactionsStore = BorrowTransactionsStore()
     var body : some View{
-        ScrollView{
+        VStack{
             Text("")
             if borrowTransactionsStore.transactions.isEmpty {
                 ZStack(alignment: .center){

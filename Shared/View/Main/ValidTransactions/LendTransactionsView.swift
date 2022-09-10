@@ -26,10 +26,12 @@ class LendTransactionsStore: ObservableObject {
     }
 }
 
-struct LendTransactionCardListView : View{
+struct LendTransactionsView : View{
+    @State private var showingSheet = false
+    @State private var selectedTransaction : Transaction = Transaction(id: 0, borrowerId: 0, lenderId: 0, applierId: 0, yen: 0, _description: "1", isValid: 0, isDone: 0, isAccepted: 0, dateTime: "0")
     @StateObject private var lendTransactionsStore = LendTransactionsStore()
     var body : some View{
-        ScrollView{
+        VStack{
             Text("")
             if lendTransactionsStore.transactions.isEmpty {
                 ZStack(alignment: .center){
@@ -41,6 +43,10 @@ struct LendTransactionCardListView : View{
             } else {
                 ForEach((0..<lendTransactionsStore.transactions.count), id: \.self) { i in
                     TransactionCardView(transaction: lendTransactionsStore.transactions[i])
+                        .onTapGesture {
+                            self.showingSheet.toggle()
+                            selectedTransaction = lendTransactionsStore.transactions[i]
+                        }
                 }
             }
         }.task {

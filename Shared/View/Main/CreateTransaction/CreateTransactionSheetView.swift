@@ -9,66 +9,112 @@ import Foundation
 import SwiftUI
 
 struct CreateTransactionSheetView: View{
+    let dateFormatter = DateFormatter()
     @Environment(\.presentationMode) var presentationMode
     @State var text = "借りを返した"
     @State var otherside_id = 0
     @State var yen = 0
     @State var _description = ""
-    @State var lend = false
+    @State var selectionViewIndex = 0
+    @State private var showingAlert = false
+    let screen: CGRect = UIScreen.main.bounds
+    var views = ["貸した","借りた"]
     var body : some View {
-        VStack{
-            Form {
-                Toggle("lend", isOn : $lend)
-                TextField("borrower_id", value: $otherside_id, formatter: NumberFormatter())
-                    .keyboardType(.numberPad)
-                TextField("yen", value: $yen, formatter: NumberFormatter())
-                    .keyboardType(.numberPad)
-                TextField("description", text: $_description)
-            }
-            Text("Add")
-                .onTapGesture {
-                    if lend{
-                        createTransaction(transaction: InsertedTransaction(borrowerId: otherside_id, lenderId: LoginUser().userId, yen: yen, _description: _description, isDone: 0, isAccepted: 0))
-                    }else{
-                        createTransaction(transaction: InsertedTransaction(borrowerId: LoginUser().userId, lenderId: otherside_id, yen: yen, _description: _description, isDone: 0, isAccepted: 0))
-                    }
-                    presentationMode.wrappedValue.dismiss()
-                    //sheetを閉じる処理
+        ScrollView{
+            Text("")
+            VStack{
+                ZStack{
+                    Rectangle()
+                        .fill(Color.white)
+                        .cornerRadius(5)
+                        .shadow(color: .gray, radius: 2, x: 0, y: 0)
+                        .frame(width:screen.width / 1.1)
+                    
+                    VStack{
+                        Picker("",selection: $selectionViewIndex) {
+                            ForEach(0..<views.count) { index in
+                                Text(self.views[index])
+                            }
+                        }.foregroundColor(.myPrimary)
+                            .pickerStyle(.segmented)
+                            .accentColor(.myPrimary)
+                        
+                        HStack{
+                            Text("取引相手")
+                                .font(.custom("Times-Roman", size: 20))
+                                .foregroundColor(.myPrimary)
+                            Spacer()
+                        }
+                        TextField("", value: $otherside_id, formatter: NumberFormatter())
+                            .keyboardType(.numberPad)
+                        Divider()
+                        
+                        HStack{
+                            Text("金額")
+                                .font(.custom("Times-Roman", size: 20))
+                                .foregroundColor(.myPrimary)
+                            Spacer()
+                        }
+                        TextField("", value: $yen, formatter: NumberFormatter())
+                            .keyboardType(.numberPad)
+                        Divider()
+                        
+                        
+                        HStack{
+                            Text("内容")
+                                .font(.custom("Times-Roman", size: 20))
+                                .foregroundColor(.myPrimary)
+                            Spacer()
+                        }
+                        TextField("", text: $_description)
+                        
+                    }.padding()
                 }
-                .foregroundColor(.myPrimary)
-                .padding(7)
-                .cornerRadius(5)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.myPrimary, lineWidth: 1)
-                )
-        }
-    }
-}
-
-func createTransaction(transaction:InsertedTransaction){
-    Task {
-        let url = URL(string: "http://localhost:8000/create/transaction")!
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "POST"
-        urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
-        let data: [String: Any] = ["borrower_id" :transaction.borrowerId,
-                                   "lender_id" : transaction.lenderId,
-                                   "yen"    : transaction.yen,
-                                   "description" : transaction._description,
-                                   "is_done"     : transaction.isDone,
-                                   "is_accepted" : transaction.isAccepted]
-        guard let httpBody = try? JSONSerialization.data(withJSONObject: data, options: []) else { return }
-        urlRequest.httpBody = httpBody
-        
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            if error != nil {
-                print("エラー")
-                return
+                Text("")
+                Text("")
+                ZStack{
+                    Rectangle()
+                        .fill(Color.myLightPrimary)
+                        .cornerRadius(5)
+                        .frame(width:screen.width / 1.1,height: screen.height/20)
+                    Text("申請")
+                        .foregroundColor(.white)
+                        .font(.system(size: 25, weight: .bold, design: .default))
+                        .onTapGesture {
+                            self.showingAlert = true
+                            let date = Date()
+                            
+                            let formatter = DateFormatter()
+                            formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "ja_JP"))
+                            if selectionViewIndex == 0{
+                                
+                                createTransaction(transaction: InsertedTransaction(borrowerId: otherside_id, lenderId: LoginUser().userId,
+                                                                                   applierId : LoginUser().userId,yen: yen, _description: _description, isValid : 0,isDone: 0, isAccepted: 0,dateTime:
+                                                                                    formatter.string(from: date)))
+                                otherside_id = 0
+                                yen = 0
+                                _description = ""
+                                selectionViewIndex = 0
+                                
+                            }else{
+                                createTransaction(transaction: InsertedTransaction(borrowerId: LoginUser().userId, lenderId: otherside_id,applierId : LoginUser().userId, yen: yen, _description: _description, isValid : 0, isDone: 0,isAccepted: 0,dateTime:
+                                                                                    formatter.string(from: date)
+                                                                                  ))
+                                otherside_id = 0
+                                yen = 0
+                                _description = ""
+                                selectionViewIndex = 0
+                            }
+                            
+                        }
+                        .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("取引を申請しました。"))
+                        }
+                        .foregroundColor(.myPrimary)
+                        .padding(7)
+                        .cornerRadius(5)
+                }
             }
-            
-            print("成功")
         }
-        task.resume()
     }
 }

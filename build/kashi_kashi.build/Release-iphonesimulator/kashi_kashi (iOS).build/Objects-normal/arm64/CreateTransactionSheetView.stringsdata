@@ -1,0 +1,28 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/CreateTransaction/CreateTransactionSheetView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "lend"
+      },
+      {
+        "comment": "",
+        "key": "borrower_id"
+      },
+      {
+        "comment": "",
+        "key": "yen"
+      },
+      {
+        "comment": "",
+        "key": "description"
+      },
+      {
+        "comment": "",
+        "key": "Add"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/View/Main/AppliedTransactions/ValidateTransactionButtonView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "承認"
+      },
+      {
+        "comment": "",
+        "key": "拒絶"
+      }
+    ]
+  },
+  "version": 1
+}

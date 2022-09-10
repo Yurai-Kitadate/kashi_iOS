@@ -1,0 +1,20 @@
+{
+  "source": "/Users/yuurai/workspace/iOS/kashi_kashi/Shared/TestView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "a"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "now loding"
+      }
+    ]
+  },
+  "version": 1
+}

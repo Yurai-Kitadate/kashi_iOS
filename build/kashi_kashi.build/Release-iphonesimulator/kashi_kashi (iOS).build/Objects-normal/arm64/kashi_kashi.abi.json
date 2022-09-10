@@ -1,0 +1,447 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "LoginUser",
+      "printedName": "LoginUser",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "userId",
+          "printedName": "userId",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int",
+              "printedName": "Swift.Int",
+              "usr": "s:Si"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:06kashi_A09LoginUserC6userIdSivp",
+          "mangledName": "$s06kashi_A09LoginUserC6userIdSivp",
+          "moduleName": "kashi_kashi",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "userName",
+          "printedName": "userName",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:06kashi_A09LoginUserC8userNameSSvp",
+          "mangledName": "$s06kashi_A09LoginUserC8userNameSSvp",
+          "moduleName": "kashi_kashi",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:06kashi_A09LoginUserC",
+      "mangledName": "$s06kashi_A09LoginUserC",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "AccessControl"
+      ],
+      "hasMissingDesignatedInitializers": true
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftUI",
+      "printedName": "SwiftUI",
+      "declKind": "Import",
+      "moduleName": "kashi_kashi"
+    }
+  ],
+  "json_format_version": 6
+}

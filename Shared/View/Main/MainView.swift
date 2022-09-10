@@ -8,34 +8,53 @@
 import Foundation
 import SwiftUI
 struct MainView : View{
+    @State private var selection : Int = 0
     var body: some View{
-        TabView{
-            ValidTransactionsView()
-                .tabItem {
-                    Image(systemName: "dollarsign.square.fill")
-                    Text("取引一覧")
-                }
-            FriendsView()
-                .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("友達")
-                }
-            CreateTransactionSheetView()
-                .tabItem {
-                    Image(systemName: "plus.circle")
-                    Text("申請")
-                }
-            AppliedTransactionsView()
-                .tabItem {
-                    Image(systemName: "envelope.fill")
-                    Text("通知")
-                }
-            SettingsView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    Text("設定")
-                }
+        VStack{
+            TabView(selection: self.$selection){
+                ValidTransactionsView()
+                    .tag(0)
+                CreateTransactionSheetView()
+                    .tag(1)
+                AppliedTransactionsView()
+                    .tag(2)
+            }
+            .tabViewStyle(PageTabViewStyle())
+            .accentColor(.myPrimary)
+            
+            
+            HStack {
+                Button(action: {self.selection = 0}, label: {
+                    if self.selection == 0{
+                        Image(systemName: "dollarsign.square.fill")
+                            .foregroundColor(.myPrimary)
+                    }else{
+                        Image(systemName: "dollarsign.square.fill")
+                            .foregroundColor(.black)
+                    }
+                })
+                .padding(20)
+                Button(action: {self.selection = 1}, label: {
+                    if self.selection == 1{
+                        Image(systemName: "plus.circle")
+                            .foregroundColor(.myPrimary)
+                    }else{
+                        Image(systemName: "plus.circle")
+                            .foregroundColor(.black)
+                    }
+                })
+                .padding(20)
+                Button(action: {self.selection = 2}, label: {
+                    if self.selection == 2{
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(.myPrimary)
+                    }else{
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(.black)
+                    }
+                })
+                .padding(20)
+            }
         }
-        .accentColor(.myPrimary)
     }
 }
